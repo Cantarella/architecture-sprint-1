@@ -183,6 +183,7 @@ function App() {
       <div className="page__content">
         <Header email={email} onSignOut={onSignOut} />
         <Switch>
+          {/*Роут / защищён HOC-компонентом ProtectedRoute*/}
           <ProtectedRoute
             exact
             path="/"
@@ -196,6 +197,7 @@ function App() {
             onCardDelete={handleCardDelete}
             loggedIn={isLoggedIn}
           />
+          {/*Роут /signup и /signin не является защищёнными, т.е оборачивать их в HOC ProtectedRoute не нужно.*/}
           <Route path="/signup">
             <Register onRegister={onRegister} />
           </Route>
