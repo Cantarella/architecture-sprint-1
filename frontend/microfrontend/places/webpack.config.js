@@ -58,9 +58,9 @@ module.exports = {
     }),
     new ModuleFederationPlugin({
       name: 'places',
-      filename: 'remoteEntry.js',
+      filename: 'placesRemoteEntry.js',
       exposes: {
-        './EntryPoint': './src/Places.js',
+        './EntryPoint': '/src/MkfModuleInit.js',
       },
       shared: {
         ...packageJson.dependencies,
