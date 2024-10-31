@@ -1,0 +1,13 @@
+@import url('./__content/page__content.css');
+@import url('./__section/page__section.css');
+
+html,
+body {
+  min-height: 100vh;
+}
+.page {
+  background: #000;
+}
+h1 {
+  color: white;
+}
