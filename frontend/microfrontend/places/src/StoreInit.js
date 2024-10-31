@@ -1,6 +1,6 @@
 import store from "./store/store";
-import {save} from "./store/user";
+import {save} from "./store/places";
 
 export function storeInit() {
-  return ['User', store, {save}]
+  return ['Places', store, {save}]
 }

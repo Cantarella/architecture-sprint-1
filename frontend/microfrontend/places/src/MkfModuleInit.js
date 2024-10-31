@@ -1,8 +1,9 @@
-import Auth from "./Auth";
+import Places from "./Places";
 import { storeInit } from "./StoreInit";
 export default function useModuleInit() {
   return {
-    root: Auth,
+    id: 'Places',
+    root: Places,
     storeInit
   }
 }

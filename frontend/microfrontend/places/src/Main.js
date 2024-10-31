@@ -7,7 +7,6 @@ import Card from "./components/Card";
 import './blocks/places/places.css';
 import './blocks/card/card.css';
 import './blocks/profile/profile.css';
-import Header from "./components/Header";
 
 function Main() {
   const [email, setEmail] = React.useState("");
@@ -21,8 +20,9 @@ function Main() {
       .then(([cardData, userData]) => {
         setEmail(userData.email);
         if (window.GlobalStore) {
-          const {Cards, User} = window.GlobalStore.getStoresList(['User', 'Cards'])
-          const {save: saveCards} = Cards.actions;
+          const {Places, User} = window.GlobalStore.getStoresList(['User', 'Places'])
+          debugger
+          const {save: saveCards} = Places.actions;
           const {save: saveUser} = User.actions;
           dispatch(saveCards(cardData));
           dispatch(saveUser(userData))
@@ -45,7 +45,6 @@ function Main() {
 
   return (
     <Provider store={store}>
-      <Header email={email} onSignOut={onSignOut} />
       <main className="content">
         <section className="profile page__section">
           <div className="profile__image" onClick={onEditAvatar} style={imageStyle}></div>
