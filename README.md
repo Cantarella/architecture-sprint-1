@@ -19,4 +19,4 @@
 
 ## Задание №2
 Ссылка на draw.io файл:
-https://drive.google.com/file/d/1ARVafpX97O9sunHdKs6_x6ZrZnYFt0y7/view?usp=drive_link
+https://drive.google.com/file/d/1ARVafpX97O9sunHdKs6_x6ZrZnYFt0y7/view?usp=sharing
